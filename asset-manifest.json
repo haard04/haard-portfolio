@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/haard-portfolio/static/css/main.35151ab7.css",
+    "main.js": "/haard-portfolio/static/js/main.598fc584.js",
+    "static/media/resume.pdf": "/haard-portfolio/static/media/resume.221a6b8f630eb81a45fb.pdf",
+    "static/media/Image.jpeg": "/haard-portfolio/static/media/Image.75922fbf53c1d4365253.jpeg",
+    "static/media/WB-logo.png": "/haard-portfolio/static/media/WB-logo.cdf74b35acc272ef6b20.png",
+    "static/media/osIMG.png": "/haard-portfolio/static/media/osIMG.dc527a16bca7faf444e3.png",
+    "static/media/musipedia-logo.png": "/haard-portfolio/static/media/musipedia-logo.da9fa8c6578ce31931eb.png",
+    "index.html": "/haard-portfolio/index.html",
+    "main.35151ab7.css.map": "/haard-portfolio/static/css/main.35151ab7.css.map",
+    "main.598fc584.js.map": "/haard-portfolio/static/js/main.598fc584.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35151ab7.css",
+    "static/js/main.598fc584.js"
+  ]
+}
