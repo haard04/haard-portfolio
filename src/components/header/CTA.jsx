@@ -1,5 +1,5 @@
 import React from 'react'
-import Resume from '../../assets/resume.pdf'
+import Resume from '../../assets/resume1.pdf'
 import './header.css'
 
 const CTA = () => {
