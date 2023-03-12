@@ -47,6 +47,13 @@ const skills = () => {
           <small className='text-light'>Intermediate</small>
           </div>
           </article>
+          <article className='skill__detail'>
+          <BsFillPatchCheckFill className='skill__detail-icon'/>
+          <div>
+          <h4>Dart</h4>
+          <small className='text-light'>Intermediate</small>
+          </div>
+          </article>
           
         </div>
       </div>
