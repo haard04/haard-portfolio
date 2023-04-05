@@ -2,7 +2,7 @@ import React from 'react'
 import './Project.css'
 import musiIMG from '../../assets/musipedia-logo.png'
 import WBPIC from '../../assets/WB-logo.png'
-import osIMG from '../../assets/osIMG.png'
+import algo from '../../assets/algo.png'
 
 
 const data=[
@@ -26,7 +26,7 @@ const data=[
     id:3,
     image:osIMG,
     title:" OS simulator",
-    description:"Work in progress",
+    description:"Using Flutter created application as a group project in which you can simulate operating system’s Algorithms like CPU scheduling, Disk scheduling, Page replacement, Deadlock condition etc. Used Technologies: C++, Dart, Flutter",
     github:"https://github.com/haard04/CPU_schedule",
     demo:"efvev"
   }
