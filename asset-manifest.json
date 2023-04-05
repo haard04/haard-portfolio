@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/haard-portfolio/static/css/main.35151ab7.css",
-    "main.js": "/haard-portfolio/static/js/main.ed5f14ed.js",
+    "main.js": "/haard-portfolio/static/js/main.822211ea.js",
     "static/media/haard43.pdf": "/haard-portfolio/static/media/haard43.3f666389a7c586e48266.pdf",
     "static/media/Image.jpeg": "/haard-portfolio/static/media/Image.75922fbf53c1d4365253.jpeg",
-    "static/media/algo.png": "/haard-portfolio/static/media/algo.d8e7c0f763869ae87e36.png",
     "static/media/WB-logo.png": "/haard-portfolio/static/media/WB-logo.cdf74b35acc272ef6b20.png",
+    "static/media/algonew.png": "/haard-portfolio/static/media/algonew.c0f4fecd659c243770ca.png",
     "static/media/musipedia-logo.png": "/haard-portfolio/static/media/musipedia-logo.da9fa8c6578ce31931eb.png",
     "index.html": "/haard-portfolio/index.html",
     "main.35151ab7.css.map": "/haard-portfolio/static/css/main.35151ab7.css.map",
-    "main.ed5f14ed.js.map": "/haard-portfolio/static/js/main.ed5f14ed.js.map"
+    "main.822211ea.js.map": "/haard-portfolio/static/js/main.822211ea.js.map"
   },
   "entrypoints": [
     "static/css/main.35151ab7.css",
-    "static/js/main.ed5f14ed.js"
+    "static/js/main.822211ea.js"
   ]
 }
