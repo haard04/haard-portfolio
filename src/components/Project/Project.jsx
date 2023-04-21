@@ -26,9 +26,9 @@ const data=[
     id:3,
     image:algo,
     title:" OS simulator",
-    description:"Using Flutter created application as a group project in which you can simulate operating system’s Algorithms like CPU scheduling, Disk scheduling, Page replacement, Deadlock condition etc. Used Technologies: C++, Dart, Flutter",
+    description:"Using Flutter created application as a group project in which you can simulate operating system’s Algorithms like CPU scheduling, Disk scheduling, Page replacement, Deadlock condition etc. Used Technologies: Flutter,Dart, C++,OpenAI API",
     github:"https://github.com/haard04/CPU_schedule",
-    //demo:""
+    demo:"https://github.com/haard04/CPU_schedule"
   }
 ]
 
