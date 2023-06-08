@@ -1,21 +1,13 @@
 import React from 'react'
 import './Project.css'
 import musiIMG from '../../assets/musipedia-logo.png'
-import WBPIC from '../../assets/WB-logo.png'
 import algo from '../../assets/algonew.png'
 
 
 const data=[
+  
   {
     id:1,
-    image:WBPIC,
-    title:"Welcome Broker",
-    description:"Using Flutter, Worked on project where implemented features like sauda management which keeps track of the deals of the businesses associated with Welcome Broker. Added automated data summary tools to improve the business for the clients of Welcome broker. Added accessibility criteria for the different business terms and  rules, making it easier for the client to work with their business. Developed backend with NodeJs and used MongoDB as database. ",
-    github:"https://github.com",
-    demo:"https://play.google.com/store/apps/details?id=com.welcomebroker.welcome_broker"
-  },
-  {
-    id:2,
     image:musiIMG,
     title:"MusiPedia ",
     description:"Designed, built, and deployed a MERN stack-based web application which gives user a platform where he can share story or details about a song . Set up a database with MongoDB Atlas to store , view, Edit and delete functionality. Tech: MongoDB, ReactJs, ExpressJs, NodeJs.",
@@ -23,7 +15,7 @@ const data=[
     demo:"https://musipediaaa.netlify.app/"
   },
   {
-    id:3,
+    id:2,
     image:algo,
     title:" OS simulator",
     description:"Using Flutter created application as a group project in which you can simulate operating system’s Algorithms like CPU scheduling, Disk scheduling, Page replacement, Deadlock condition etc. Used Technologies: Flutter,Dart, C++,OpenAI API",
