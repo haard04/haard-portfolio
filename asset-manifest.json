@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/haard-portfolio/static/css/main.a50deccd.css",
-    "main.js": "/haard-portfolio/static/js/main.4aa5b0f8.js",
-    "static/media/haard-SHAH.pdf": "/haard-portfolio/static/media/haard-SHAH.7c0323b2043fd28451ec.pdf",
+    "main.js": "/haard-portfolio/static/js/main.53a966f8.js",
+    "static/media/Haard_Resume.pdf": "/haard-portfolio/static/media/Haard_Resume.e0cb16b902bd15495956.pdf",
     "static/media/Image.jpeg": "/haard-portfolio/static/media/Image.75922fbf53c1d4365253.jpeg",
+    "static/media/HMS.png": "/haard-portfolio/static/media/HMS.1d7b269de5462bdd692b.png",
     "static/media/algonew.png": "/haard-portfolio/static/media/algonew.c0f4fecd659c243770ca.png",
     "static/media/musipedia-logo.png": "/haard-portfolio/static/media/musipedia-logo.da9fa8c6578ce31931eb.png",
     "index.html": "/haard-portfolio/index.html",
     "main.a50deccd.css.map": "/haard-portfolio/static/css/main.a50deccd.css.map",
-    "main.4aa5b0f8.js.map": "/haard-portfolio/static/js/main.4aa5b0f8.js.map"
+    "main.53a966f8.js.map": "/haard-portfolio/static/js/main.53a966f8.js.map"
   },
   "entrypoints": [
     "static/css/main.a50deccd.css",
-    "static/js/main.4aa5b0f8.js"
+    "static/js/main.53a966f8.js"
   ]
 }
