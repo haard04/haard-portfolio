@@ -2,7 +2,7 @@ import React from 'react'
 import './Project.css'
 import musiIMG from '../../assets/musipedia-logo.png'
 import algo from '../../assets/algonew.png'
-
+import HMS from '../../assets/HMS.png'
 
 const data=[
   
@@ -21,6 +21,14 @@ const data=[
     description:"Using Flutter created application as a group project in which you can simulate operating system’s Algorithms like CPU scheduling, Disk scheduling, Page replacement, Deadlock condition etc. Used Technologies: Flutter,Dart, C++,OpenAI API",
     github:"https://github.com/haard04/CPU_schedule",
     demo:"https://github.com/haard04/CPU_schedule"
+  },
+  {
+    id:3,
+    image:HMS,
+    title:"Hospital Management System",
+    description:"Worked on Hospital management system as Database Management System project, Used MySQL for it. ",
+    github:"https://github.com/haard04/Hospital-Management-System---DBMS-project",
+    demo:"https://github.com/haard04/Hospital-Management-System---DBMS-project"
   }
 ]
 
