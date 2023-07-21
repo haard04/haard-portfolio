@@ -3,11 +3,18 @@ import './Project.css'
 import musiIMG from '../../assets/musipedia-logo.png'
 import algo from '../../assets/algonew.png'
 import HMS from '../../assets/HMS.png'
-
+import resumeproject from '../../assets/resumeproject.png'
 const data=[
-  
   {
     id:1,
+    image:resumeproject,
+    title:"Online Resume Watcher ",
+    description:"Created Web App Using Django for watching Resume online with dynamic link, User will have it\’s own link and user can update resume anytime. Person can watch only updated resume. No need to change link. Stored PDFs as binary to optimise data.\n Tech: Django, HTML, CSS, MySQL",
+    github:"https://github.com/haard04/ResumeWatcher",
+    demo:"https://online-resume-watcher-6xw5.onrender.com/"
+  },
+  {
+    id:2,
     image:musiIMG,
     title:"MusiPedia ",
     description:"Designed, built, and deployed a MERN stack-based web application which gives user a platform where he can share story or details about a song . Set up a database with MongoDB Atlas to store , view, Edit and delete functionality. Tech: MongoDB, ReactJs, ExpressJs, NodeJs.",
@@ -15,7 +22,7 @@ const data=[
     demo:"https://musipediaaa.netlify.app/"
   },
   {
-    id:2,
+    id:3,
     image:algo,
     title:" OS simulator",
     description:"Using Flutter created application as a group project in which you can simulate operating system’s Algorithms like CPU scheduling, Disk scheduling, Page replacement, Deadlock condition etc. Used Technologies: Flutter,Dart, C++,OpenAI API",
@@ -23,7 +30,7 @@ const data=[
     demo:"https://github.com/haard04/CPU_schedule"
   },
   {
-    id:3,
+    id:4,
     image:HMS,
     title:"Hospital Management System",
     description:"Worked on Hospital management system as Database Management System project, Used MySQL for it. ",
