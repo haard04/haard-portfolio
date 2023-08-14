@@ -43,7 +43,7 @@ const skills = () => {
           <article className='skill__detail'>
           <BsFillPatchCheckFill className='skill__detail-icon'/>
           <div>
-          <h4>MySQL</h4>
+          <h4>SQL</h4>
           <small className='text-light'>Intermediate</small>
           </div>
           </article>
@@ -140,6 +140,27 @@ const skills = () => {
           <article className='skill__detail'>
           <BsFillPatchCheckFill className='skill__detail-icon'/>
           <div>
+          <h4>Visual Studio Code </h4>
+          <small className='text-light'>Experienced</small>
+          </div>
+          </article>
+          <article className='skill__detail'>
+          <BsFillPatchCheckFill className='skill__detail-icon'/>
+          <div>
+          <h4>Android Studio </h4>
+          <small className='text-light'>Experienced</small>
+          </div>
+          </article>
+          <article className='skill__detail'>
+          <BsFillPatchCheckFill className='skill__detail-icon'/>
+          <div>
+          <h4>Intelij IDEA </h4>
+          <small className='text-light'>Experienced</small>
+          </div>
+          </article>
+          <article className='skill__detail'>
+          <BsFillPatchCheckFill className='skill__detail-icon'/>
+          <div>
           <h4>Postman</h4>
           <small className='text-light'>Experienced</small>
           </div>
@@ -163,6 +184,20 @@ const skills = () => {
           <div>
           <h4>Jira </h4>
           <small className='text-light'>Experienced</small>
+          </div>
+          </article>
+          <article className='skill__detail'>
+          <BsFillPatchCheckFill className='skill__detail-icon'/>
+          <div>
+          <h4>Flex </h4>
+          <small className='text-light'>Basic</small>
+          </div>
+          </article>
+          <article className='skill__detail'>
+          <BsFillPatchCheckFill className='skill__detail-icon'/>
+          <div>
+          <h4>SAM </h4>
+          <small className='text-light'>Basic</small>
           </div>
           </article>
           
