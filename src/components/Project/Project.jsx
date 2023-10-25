@@ -8,8 +8,10 @@ const data=[
   {
     id:1,
     image:resumeproject,
-    title:"Online Resume Watcher ",
-    description:"Created Web App Using Django for watching Resume online with dynamic link, User will have it\’s own link and user can update resume anytime. Person can watch only updated resume. No need to change link. Stored PDFs as binary to optimise data.\n Tech: Django, HTML, CSS, MySQL",
+    title:"Career Catalyst",
+    description:`Created a dynamic platform offering resume version control, comprehensive job application tracking, and personalized job recommendations, streamlining the job search process and empowering users with data-driven insights for optimal career decisions.
+    Developing it enhanced skills in full-stack web development, data visualization, and machine learning integration,providing valuable experience in building user-centric applications and leveraging cloud services for scalable solutions.
+    Tech: Django, Next Js, AWS RDS (MySQL), NLP`,
     github:"https://github.com/haard04/ResumeWatcher",
     demo:"https://online-resume-watcher-6xw5.onrender.com/"
   },
@@ -36,7 +38,23 @@ const data=[
     description:"Worked on Hospital management system as Database Management System project, Used MySQL for it. ",
     github:"https://github.com/haard04/Hospital-Management-System---DBMS-project",
     demo:"https://github.com/haard04/Hospital-Management-System---DBMS-project"
-  }
+  },
+  {
+    id:5,
+    image:null,
+    title:"Rescue Management Application",
+    description:"Created Rescue management System as Part of Smart India Hackathon-2023, Here Rescue Agency can register themselves and user do not need to register, User will open app and app will fetch user\'s live location and will give details of all the rescue agencies nearby. Agency can contact with other agency so they can communicate regarding resources management.Tech stack: Flutter,Node Js,Express Js, MongoDb",
+    github:"https://github.com/haard04/rescue-app",
+    demo:"https://github.com/haard04/rescue-app"
+  },
+  {
+    id:5,
+    image:null,
+    title:"Cliniflow App",
+    description:"Created Rescue management System as Part of Hackout-2023 at DAIICT,Gandhinagar, Here Doctor do not need to write all the prescription writing manually, instead doctor just have to speak and it will generate PDF of prescription, It will make ease the process.Tech stack: Flutter,Node Js,Express Js, MongoDb",
+    github:"hhttps://github.com/haard04/cliniflow-app",
+    demo:"https://github.com/haard04/cliniflow-app"
+  },
 ]
 
 const Project = () => {
