@@ -43,7 +43,7 @@ const sendEmail = (e) => {
           <ImLinkedin className='contact__option-icon'/>
           <h4>LinkedIn</h4>
           <h5>Haard Shah</h5>
-          <a href='https://www.linkedin.com/in/haard-shah-437a08239/' target={'_blank'}>Connect Me</a>
+          <a href='https://www.linkedin.com/in/haard-/' target={'_blank'}>Connect Me</a>
         </article>
         <article className="contact__option">
           <IoLogoWhatsapp className='contact__option-icon'/>

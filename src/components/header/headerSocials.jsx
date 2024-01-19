@@ -6,7 +6,7 @@ import {SiCodeforces} from 'react-icons/si'
 const headerSocial = () => {
   return (
     <div className='header__socials'>
-        <a href='https://www.linkedin.com/in/haard-shah-437a08239/'target="_blank"><BsLinkedin/></a>
+        <a href='https://www.linkedin.com/in/haard-/'target="_blank"><BsLinkedin/></a>
         
         <a href='https://github.com/haard04'target='_blank'><BsGithub/></a>
         <a href='https://codeforces.com/profile/haardshah04'target='_blank'><SiCodeforces/></a>
