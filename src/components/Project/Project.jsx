@@ -48,14 +48,6 @@ const data=[
     github:"https://github.com/haard04/Hospital-Management-System---DBMS-project",
     demo:"https://github.com/haard04/Hospital-Management-System---DBMS-project"
   },
-  {
-    id:6,
-    image:null,
-    title:<h2>Rescue Management Application</h2>,
-    description:<h3>➔ Created Rescue management System as Part of Smart India Hackathon-2023, Here Rescue Agencies can register themselves, User will open app and app will fetch user's live location and will give details of all the rescue agencies nearby. Agency can contact with other agencies so they can communicate regarding resources management.<br/>➔ Tech stack: Flutter, Node Js, Express Js, MongoDb</h3>,
-    github:"https://github.com/haard04/rescue-app",
-    demo:"https://github.com/haard04/rescue-app"
-  },
   // {
   //   id:7,
   //   image:null,

@@ -113,6 +113,20 @@ const skills = () => {
           <article className='skill__detail'>
           <BsFillPatchCheckFill className='skill__detail-icon'/>
           <div>
+          <h4>Flask</h4>
+          <small className='text-light'>Intermediate</small>
+          </div>
+          </article>
+          <article className='skill__detail'>
+          <BsFillPatchCheckFill className='skill__detail-icon'/>
+          <div>
+          <h4>FAST API</h4>
+          <small className='text-light'>Intermediate</small>
+          </div>
+          </article>
+          <article className='skill__detail'>
+          <BsFillPatchCheckFill className='skill__detail-icon'/>
+          <div>
           <h4>HTML</h4>
           <small className='text-light'>Experienced</small>
           </div>
@@ -236,7 +250,7 @@ const skills = () => {
           <article className='skill__detail'>
           <BsFillPatchCheckFill className='skill__detail-icon'/>
           <div>
-          <h4>Google Cloud Platform</h4>
+          <h4>AWS</h4>
           <small className='text-light'>Intermediate</small>
           </div>
           </article>
@@ -250,7 +264,7 @@ const skills = () => {
           <article className='skill__detail'>
           <BsFillPatchCheckFill className='skill__detail-icon'/>
           <div>
-          <h4>AWS</h4>
+          <h4>Google Cloud Platform</h4>
           <small className='text-light'>Basic</small>
           </div>
           </article>
