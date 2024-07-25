@@ -72,11 +72,12 @@
   .exp_desc {
     margin-top: 5px;
     font-size: 14px;
+    text-align: justify;
   }
   
   @media (min-width: 1200px) {
     .exp_item {
-      width: 90%;
+      width: 95%;
     }
   }
   

@@ -22,6 +22,7 @@
     border-radius: 1.5rem;
     overflow: hidden;
     height: 18rem;
+
 }
 
 .project__item h3{
@@ -36,7 +37,8 @@
 }
 
 .project_desc{
-    height: 15rem;
+    height: 18rem;
+    text-align: justify;
 }
 
 @media screen and (max-width:1024px) {
