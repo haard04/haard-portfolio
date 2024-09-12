@@ -80,21 +80,21 @@
     text-align: justify;
   }
   
-  @media (min-width: 1200px) {
+  /* @media (min-width: 1200px) {
     .exp_item {
       width: 95%;
     }
     .Experience{
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-  }
-  @media screen and (max-width:1024px) {
+  } */
+  @media screen and (max-width:1200px) {
     .Experience{
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
   .Experience{
     grid-template-columns: repeat(1, 1fr);
   }

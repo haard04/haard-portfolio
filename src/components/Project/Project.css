@@ -24,7 +24,7 @@
 .project__item-image{
     border-radius: 1.5rem;
     overflow: hidden;
-    height: 18rem;
+    /* height: 18rem; */
 
 }
 
@@ -40,7 +40,7 @@
 }
 
 .project_desc{
-    height: 18rem;
+    /* height: 18rem; */
     text-align: justify;
 }
 
@@ -81,8 +81,5 @@
         /* height: max-content; */
         
     }
-    .project_desc{
-        height: 24rem;
-        text-align: justify;
-    }
+    
 }
