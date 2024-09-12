@@ -33,6 +33,7 @@
     transition: var(--transition);
     margin-bottom: 20px;
     background: var(--color-bg-variant);
+    margin-right: 10px;
     
   }
   
@@ -51,15 +52,19 @@
     margin-bottom: 0;
     color: var(--color-primary);
   }
+  .company-duration h2:nth-child(1) {
+    font-size: 20px;
+    /* margin-left: 10px; */
+  }
   
   .company-duration h2:nth-child(2) {
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 10px;
   }
   
   .role {
     font-weight: bold;
-    color: var(--color-primary);
+    color: skyblue;
   
   }
   
@@ -79,5 +84,18 @@
     .exp_item {
       width: 95%;
     }
+    .Experience{
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
-  
+  @media screen and (max-width:1024px) {
+    .Experience{
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:600px) {
+  .Experience{
+    grid-template-columns: repeat(1, 1fr);
+  }
+} 
