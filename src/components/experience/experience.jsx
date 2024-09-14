@@ -5,7 +5,7 @@ const data=[
   {
     id:1,
     Company: "Marwiz Tech Pvt. Ltd. - Vadodara, Gujarat, India",
-    Role:"Full Stack Web and App Development Intern",
+    Role:"Full Stack Development Intern",
     Duration:"June 2024 - July 2024",
     description1:"➔ Developed the backend for the ”EHS Mind Manager”, a licensing and certification renewal platform, using Node.js and Express.js, reducing the time to issue new certificates by 78%.",
     description2:"➔ Built the frontend with React.js for the web and Flutter for the app, enabling customizable design in the canvas and improving design efficiency by 54%.",
