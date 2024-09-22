@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/haard-portfolio/static/css/main.dd97c9f4.css",
-    "main.js": "/haard-portfolio/static/js/main.a09462ed.js",
-    "static/media/careercat.png": "/haard-portfolio/static/media/careercat.beb25a6812e46ed7351c.png",
-    "static/media/expensesmeter.png": "/haard-portfolio/static/media/expensesmeter.ce9830cef2f07ea348d4.png",
-    "static/media/Image.jpeg": "/haard-portfolio/static/media/Image.75922fbf53c1d4365253.jpeg",
-    "static/media/HMS.png": "/haard-portfolio/static/media/HMS.1d7b269de5462bdd692b.png",
-    "static/media/algonew.png": "/haard-portfolio/static/media/algonew.c0f4fecd659c243770ca.png",
-    "static/media/musipedia-logo.png": "/haard-portfolio/static/media/musipedia-logo.da9fa8c6578ce31931eb.png",
-    "index.html": "/haard-portfolio/index.html",
-    "main.dd97c9f4.css.map": "/haard-portfolio/static/css/main.dd97c9f4.css.map",
-    "main.a09462ed.js.map": "/haard-portfolio/static/js/main.a09462ed.js.map"
+    "main.css": "/haard.me/static/css/main.dd97c9f4.css",
+    "main.js": "/haard.me/static/js/main.1b920b03.js",
+    "static/media/careercat.png": "/haard.me/static/media/careercat.beb25a6812e46ed7351c.png",
+    "static/media/expensesmeter.png": "/haard.me/static/media/expensesmeter.ce9830cef2f07ea348d4.png",
+    "static/media/Image.jpeg": "/haard.me/static/media/Image.75922fbf53c1d4365253.jpeg",
+    "static/media/HMS.png": "/haard.me/static/media/HMS.1d7b269de5462bdd692b.png",
+    "static/media/algonew.png": "/haard.me/static/media/algonew.c0f4fecd659c243770ca.png",
+    "static/media/musipedia-logo.png": "/haard.me/static/media/musipedia-logo.da9fa8c6578ce31931eb.png",
+    "index.html": "/haard.me/index.html",
+    "main.dd97c9f4.css.map": "/haard.me/static/css/main.dd97c9f4.css.map",
+    "main.1b920b03.js.map": "/haard.me/static/js/main.1b920b03.js.map"
   },
   "entrypoints": [
     "static/css/main.dd97c9f4.css",
-    "static/js/main.a09462ed.js"
+    "static/js/main.1b920b03.js"
   ]
 }
