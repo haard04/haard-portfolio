@@ -3,7 +3,19 @@ import './experience.css';
 
 const data=[
   {
+
     id:1,
+    Company: "Gamma OpenGig Work Pvt. Ltd. - Hyderabad, Telangana, India",
+    Role:"SDE Intern",
+    Duration:"January 2025 - Current",
+    description1:"➔ Developed internal tools and client-facing applications using Next.js and Python, including AI-powered solutions that enhanced client outreach and business team efficiency by 50% while accelerating MVP delivery timelines by 20%.",
+    description2:"➔ Engineered scalable cloud infrastructure on AWS and GCP for both client and internal projects, utilizing Terraform for Infrastructure as Code (IaC) and GitHub Workflows for CI/CD, improving infrastructure reliability and scalability by 35%.",
+    description3:""
+    
+  },
+  {
+
+    id:2,
     Company: "Marwiz Tech Pvt. Ltd. - Vadodara, Gujarat, India",
     Role:"Full Stack Development Intern",
     Duration:"June 2024 - July 2024",
@@ -13,7 +25,7 @@ const data=[
     
   },
   {
-      id:2,
+      id:3,
       Company: "Welcome Broker - Ahmedabad, Gujarat, India.",
       Role:"Software Development Intern",
       Duration:"May 2022 - May 2023",
