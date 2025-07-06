@@ -3,19 +3,28 @@ import './experience.css';
 
 const data=[
   {
-
     id:1,
     Company: "Gamma OpenGig Work Pvt. Ltd. - Hyderabad, Telangana, India",
     Role:"SDE Intern",
     Duration:"January 2025 - Current",
-    description1:"➔ Developed internal tools and client-facing applications using Next.js and Python, including AI-powered solutions that enhanced client outreach and business team efficiency by 50% while accelerating MVP delivery timelines by 20%.",
-    description2:"➔ Engineered scalable cloud infrastructure on AWS and GCP for both client and internal projects, utilizing Terraform for Infrastructure as Code (IaC) and GitHub Workflows for CI/CD, improving infrastructure reliability and scalability by 35%.",
-    description3:""
+    description1:"➔ Designed and deployed an automated EMR data extraction pipeline using Selenium, FastAPI, PostgreSQL, and proxy rotation, enabling daily secure transfers from third-party systems to internal billing APIs boosting data accuracy by 95% and saving 90% manual processing time.",
+    description2:"➔ Collaborated to develop an end-to-end AI-powered marketing platform using Next.js, NestJS, Prisma, FastAPI, MongoDB, and trigger.dev, integrating Dropbox, Pinecone, and ElasticSearch for smart content indexing and vector search, accelerated dynamic website creation and automated Netlify deployments, cutting campaign launch time by 50% and MVP turnaround by 30%.",
+    description3:"➔ Developed an Omnipresence mobile app with Flutter, offering real time location based services with gesture navigation, remote shopping, and TTS features, boosting user engagement and improving accessibility for people with mobility and vision challenges by 70%."
+    
+  },
+  {
+    id:2,
+    Company: "Gamma OpenGig Work Pvt. Ltd. - Hyderabad, Telangana, India",
+    Role:"SDE Intern",
+    Duration:"January 2025 - June 2025",
+    description1:"➔ Spearheaded to the development of a cloud security & compliance platform using Django, Next.js, NestJS, Celery, Redis, FastAPI, Prisma & PostgreSQL, achieving a 60% improvement in compliance tracking & 80% reduction in costs.",
+    description2:"➔ Integrated internal tools and client-facing AI-powered applications, boosting client outreach effectiveness by 50% and accelerating MVP delivery by 20%.",
+    description3:"➔ Applied Infrastructure as Code (IaC) practices using Terraform and implemented CI/CD pipelines via GitHub Workflows, enhancing infrastructure scalability and reliability by 35% across AWS and GCP projects."
     
   },
   {
 
-    id:2,
+    id:3,
     Company: "Marwiz Tech Pvt. Ltd. - Vadodara, Gujarat, India",
     Role:"Full Stack Development Intern",
     Duration:"June 2024 - July 2024",
@@ -25,7 +34,7 @@ const data=[
     
   },
   {
-      id:3,
+      id:4,
       Company: "Welcome Broker - Ahmedabad, Gujarat, India.",
       Role:"Software Development Intern",
       Duration:"May 2022 - May 2023",
