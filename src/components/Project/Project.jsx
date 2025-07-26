@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './Project.css'
 import musiIMG from '../../assets/musipedia-logo.png'
 import algo from '../../assets/algonew.png'
@@ -79,15 +79,37 @@ real-time monitoring.
 ]
 
 const Project = () => {
+  const projectsRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const projectCards = projectsRef.current?.querySelectorAll('.project-card');
+    projectCards?.forEach((card) => {
+      observer.observe(card);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id='projects'>
+    <section id='projects' ref={projectsRef}>
       <h5>My Recent work</h5>
       <h2>Projects</h2>
       <div className='container project__container'>
         {
           data.map(({id,image,title,description,github,demo})=>{
             return (
-              <article key={id} className='project__item'>
+              <article key={id} className='project__item project-card fade-in'>
         {/* <div className='project__item-image'>
         <img src={image} alt={title}></img>
         </div> */}

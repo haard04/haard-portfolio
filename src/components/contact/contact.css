@@ -1,68 +1,262 @@
 .container.contact__container{
-    width: 58%;
+    width: 70%;
     display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    margin-top: 3rem;
 }
 
 .contact__options{
     display: flex;
     flex-direction: column;
-    gap:1.2rem;
+    gap: 1.5rem;
 }
 
 .contact__option{
-    background-color: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    padding: 1.5rem;
+    border-radius: var(--radius-xl);
     text-align: center;
-    border: 1px solid transparent;
     transition: var(--transition);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
 }
+
+.contact__option::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
 .contact__option:hover{
-    background: transparent;
-    border-color: var(--color-primary-variant);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--color-primary);
 }
 
 .contact__option-icon{
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
 
+.contact__option:hover .contact__option-icon{
+    color: var(--color-secondary);
+    transform: scale(1.1);
+}
+
+.contact__option h4{
+    color: var(--color-white);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.contact__option h5{
+    color: var(--color-light);
+    font-weight: 400;
+    margin-bottom: 1rem;
 }
 
 .contact__option a{
-    margin-top: 0.7rem;
+    margin-top: 0.5rem;
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.contact__option a:hover{
+    color: var(--color-secondary);
+    transform: translateX(5px);
 }
 
 form{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.5rem;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
 }
 
-input,textarea{
+form::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.form__group{
+    position: relative;
+}
+
+.form__group label{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    transition: var(--transition);
+    pointer-events: none;
+    background: var(--color-bg-card);
+    padding: 0 0.5rem;
+}
+
+.form__group input:focus + label,
+.form__group textarea:focus + label,
+.form__group input:not(:placeholder-shown) + label,
+.form__group textarea:not(:placeholder-shown) + label{
+    top: -0.5rem;
+    left: 0.75rem;
+    font-size: 0.75rem;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+input, textarea{
     width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    padding: 1.25rem 1rem;
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--color-border);
     resize: none;
     color: var(--color-white);
+    font-size: 0.95rem;
+    transition: var(--transition);
+    font-family: inherit;
 }
 
+input:focus, textarea:focus{
+    outline: none;
+    border-color: var(--color-primary);
+    background: rgba(99, 102, 241, 0.05);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
 
-@media screen and (max-width:1024px) {
+input::placeholder, textarea::placeholder{
+    color: var(--color-muted);
+    opacity: 0;
+}
+
+textarea{
+    min-height: 120px;
+    line-height: 1.6;
+}
+
+/* Submit button styling */
+form button{
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    border-radius: var(--radius-lg);
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+form button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: var(--transition);
+}
+
+form button:hover::before{
+    left: 100%;
+}
+
+form button:hover{
+    background: var(--gradient-secondary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
     .container.contact__container{
+        width: 80%;
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 768px) {
     .container.contact__container{
-        width: var(--container-width-ms);
+        width: 90%;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .contact__option{
+        padding: 1.25rem;
+    }
+    
+    form{
+        padding: 1.5rem;
+    }
+    
+    input, textarea{
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    form button{
+        padding: 0.875rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container.contact__container{
+        width: 95%;
+    }
+    
+    .contact__option{
+        padding: 1rem;
+    }
+    
+    .contact__option-icon{
+        font-size: 1.5rem;
+    }
+    
+    form{
+        padding: 1.25rem;
+    }
+    
+    input, textarea{
+        padding: 0.875rem;
+        font-size: 0.85rem;
+    }
+    
+    form button{
+        padding: 0.75rem 1.25rem;
+        font-size: 0.85rem;
     }
 }
 

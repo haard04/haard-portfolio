@@ -2,14 +2,74 @@ header{
     height: 100vh;
     padding-top: 7rem;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    pointer-events: none;
 }
 
 .header__container{
     text-align: center;
     height: 100%;
     position: relative;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.header__container h5{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-light);
+    margin-bottom: 0.5rem;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.header__container h1{
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+    position: relative;
+}
+
+.header__container h1::after{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.header__container .text-light{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-light);
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
 .cta{
@@ -17,6 +77,7 @@ header{
     display: flex;
     gap: 1.2rem;
     justify-content: center;
+    animation: fadeInUp 0.8s ease-out 0.8s both;
 }
 
 .header__socials{
@@ -25,54 +86,178 @@ header{
     gap: 0.8rem;
     align-items: center;
     position: absolute;
-    left: 0;
+    left: 2rem;
     bottom: 3rem;
-
+    animation: fadeInLeft 0.8s ease-out 1s both;
 }
 
 .header__socials::after{
     content: '';
     width: 1px;
     height: 2rem;
-    background: var(--color-primary);
+    background: var(--gradient-primary);
+    margin-top: 0.5rem;
+}
+
+.header__socials a{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-light);
+    font-size: 1.1rem;
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+}
+
+.header__socials a:hover{
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-glow);
 }
 
 .pic{
-    background: linear-gradient(var(--color-primary),transparent) ;
+    background: var(--gradient-primary);
     width: 22rem;
     height: 30rem;
     position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0 ;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: var(--radius-2xl);
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
-   
+    padding: 1.5rem;
+    animation: fadeInRight 0.8s ease-out 0.8s both;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--color-border);
+}
+
+.pic::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    z-index: 1;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-xl);
+    position: relative;
+    z-index: 2;
 }
 
 .scroll__down{
     position: absolute;
-    right: -2.3rem;
+    right: 2rem;
     bottom: 5rem;
     transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 0.8rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--color-light);
+    animation: fadeInRight 0.8s ease-out 1.2s both;
+    transition: var(--transition);
 }
 
+.scroll__down:hover{
+    color: var(--color-primary);
+    transform: rotate(90deg) translateX(5px);
+}
 
-@media screen and (max-width:1024px) {
+/* Floating animation for the profile picture */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(-50%) translateX(0);
+    }
+    50% {
+        transform: translateY(-50%) translateX(-10px);
+    }
+}
+
+.pic{
+    animation: fadeInRight 0.8s ease-out 0.8s both, float 6s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
     header{
         height: 68vh;
+        padding-top: 4rem;
+    }
+    
+    .pic{
+        width: 18rem;
+        height: 24rem;
+        right: 1rem;
+    }
+    
+    .header__socials{
+        left: 1rem;
+    }
+    
+    .scroll__down{
+        right: 1rem;
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 768px) {
     header{
         height: 100vh;
+        padding-top: 2rem;
     }
-
+    
+    .header__container h1{
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+    
+    .pic{
+        position: relative;
+        width: 16rem;
+        height: 20rem;
+        margin: 2rem auto 0;
+        right: auto;
+        top: auto;
+        transform: none;
+        animation: fadeInUp 0.8s ease-out 0.8s both;
+    }
+    
     .header__socials,
     .scroll__down{
         display: none;
+    }
+    
+    .cta{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        padding-top: 1rem;
+    }
+    
+    .header__container h1{
+        font-size: clamp(2rem, 12vw, 3rem);
+    }
+    
+    .pic{
+        width: 14rem;
+        height: 18rem;
+    }
+    
+    .header__container .text-light{
+        font-size: 1.1rem;
     }
 }

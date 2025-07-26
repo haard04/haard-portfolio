@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 // import About from './components/About/About'
 import Header from './components/header/header.jsx'
 import Nav from './components/nav/nav'
@@ -10,6 +10,29 @@ import Experience from './components/experience/experience.jsx'
 
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="loading-screen">
+        <div className="loading-spinner">
+          <div className="spinner"></div>
+          <h2>Haard Shah</h2>
+          <p>Loading Portfolio...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <>
     <Header/>

@@ -1,37 +1,121 @@
 nav{
-    background: rgba(0,0,0,0.3);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--color-border);
     width: max-content;
     display: block;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
+    padding: 0.75rem 1.5rem;
+    z-index: 999;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     bottom: 2rem;
     display: flex;
-    gap: 0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15px);
+    gap: 0.5rem;
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+}
 
+nav:hover{
+    box-shadow: var(--shadow-xl);
+    transform: translateX(-50%) translateY(-2px);
 }
 
 nav a{
     background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
+    padding: 0.75rem;
+    border-radius: var(--radius-full);
     display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color-light);
     font-size: 1.1rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+nav a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    opacity: 0;
+    transition: var(--transition);
+    transform: scale(0.8);
 }
 
 nav a:hover{
-    background: rgba(0, 0, 0, 0.3);
+    color: var(--color-white);
+    transform: translateY(-2px);
+}
 
+nav a:hover::before{
+    opacity: 1;
+    transform: scale(1);
 }
 
 nav a.active{
-    background: var(--color-primary);
+    background: var(--gradient-primary);
     color: var(--color-white);
-    
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+}
 
+nav a.active::before{
+    opacity: 0;
+}
+
+nav a svg{
+    position: relative;
+    z-index: 1;
+}
+
+/* Pulse animation for active nav item */
+@keyframes navPulse {
+    0% {
+        box-shadow: var(--shadow-glow);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+    }
+    100% {
+        box-shadow: var(--shadow-glow);
+    }
+}
+
+nav a.active{
+    animation: navPulse 2s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav{
+        padding: 0.5rem 1rem;
+        gap: 0.25rem;
+        bottom: 1.5rem;
+    }
+    
+    nav a{
+        padding: 0.625rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav{
+        padding: 0.5rem 0.75rem;
+        gap: 0.2rem;
+    }
+    
+    nav a{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
 }

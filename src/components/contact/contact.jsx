@@ -53,10 +53,19 @@ const sendEmail = (e) => {
         </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
-          <input type='text' name='Name' placeholder='Enter Your Full Name' required/>
-          <input type='email' name='Email' placeholder='Enter Your Email Id' required/>
-          <textarea name='message' rows={7} placeholder='Your message' required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message </button>
+          <div className="form__group">
+            <input type='text' name='Name' placeholder=' ' required/>
+            <label>Your Full Name</label>
+          </div>
+          <div className="form__group">
+            <input type='email' name='Email' placeholder=' ' required/>
+            <label>Your Email Address</label>
+          </div>
+          <div className="form__group">
+            <textarea name='message' rows={7} placeholder=' ' required></textarea>
+            <label>Your Message</label>
+          </div>
+          <button type='submit'>Send Message</button>
         </form>
       </div>
     </section>
