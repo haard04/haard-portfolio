@@ -7,6 +7,7 @@ import Project from './components/Project/Project'
 import Contact from './components/contact/contact'
 import Footer from './components/footer/footer'
 import Experience from './components/experience/experience.jsx'
+import Companies from './components/companies/companies.jsx'
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
     <>
     <Header/>
     <Nav/>
+    <Companies/>
     <Skills/>
     <Experience/>
     <Project/>
