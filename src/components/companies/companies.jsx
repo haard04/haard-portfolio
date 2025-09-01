@@ -9,6 +9,8 @@ import world360Logo from '../../assets/360world.jpg';
 import cloudNationLogo from '../../assets/cloudnation.svg';
 import jetdriveLogo from '../../assets/jetdrive.png';
 import strikeLogo from '../../assets/strike.svg';
+import welcomeBrokerLogo from '../../assets/welcomebroker.png';
+import seqgptLogo from '../../assets/seqgpt.png';
 
 const Companies = () => {
   // Add your company data here
@@ -54,6 +56,18 @@ const Companies = () => {
         logo: strikeLogo,
         link: "https://web.strike.money",
         line1: "Stock market analytical tool"
+    },
+    {
+        name: "Welcome Broker",
+        logo: welcomeBrokerLogo,
+        link: "https://welcomebroker.in",
+        line1: "Leading Cattlefeed market since 25+ years"
+    },
+    {
+        name: "SeqGPT",
+        logo: seqgptLogo,
+        link: "https://hiddenpieces.ai",
+        line1: ""
     }
     // Add more companies as needed
   ];
