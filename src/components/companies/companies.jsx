@@ -9,7 +9,7 @@ import world360Logo from '../../assets/360world.jpg';
 import cloudNationLogo from '../../assets/cloudnation.svg';
 import jetdriveLogo from '../../assets/jetdrive.png';
 import strikeLogo from '../../assets/strike.svg';
-import welcomeBrokerLogo from '../../assets/welcomebroker.png';
+import welcomeBrokerLogo from '../../assets/welcomeBroker.png';
 import seqgptLogo from '../../assets/seqgpt.png';
 
 const Companies = () => {
