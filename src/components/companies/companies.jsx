@@ -11,7 +11,7 @@ import jetdriveLogo from '../../assets/jetdrive.png';
 import strikeLogo from '../../assets/strike.svg';
 import welcomeBrokerLogo from '../../assets/welcomeBroker.png';
 import seqgptLogo from '../../assets/seqgpt.png';
-import itcLogo from '../../assets/itc.png';
+import itcLogo from '../../assets/ITC.png';
 
 const Companies = () => {
   // Add your company data here
