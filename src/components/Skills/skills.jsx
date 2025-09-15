@@ -50,7 +50,9 @@ import {
   SiPostgresql,
   SiSupabase,
   SiAmazonaws,
-  SiSnowflake
+  SiSnowflake,
+  SiNestjs,
+  SiVercel,
 } from 'react-icons/si';
 // Removed: import { TbBrandPinecone } from 'react-icons/tb';
 
@@ -163,6 +165,13 @@ const Skills = () => {
           </div>
           </article>
           <article className='skill__detail'>
+          <SiNestjs className='skill__detail-icon'/>
+          <div>
+          <h4>Nest Js</h4>
+          <small className='text-light'>Experienced</small>
+          </div>
+          </article>
+          <article className='skill__detail'>
           <SiFlutter className='skill__detail-icon'/>
           <div>
           <h4>Flutter</h4>
@@ -208,7 +217,7 @@ const Skills = () => {
           <SiFastapi className='skill__detail-icon'/>
           <div>
           <h4>FAST API</h4>
-          <small className='text-light'>Intermediate</small>
+          <small className='text-light'>Experienced</small>
           </div>
           </article>
           <article className='skill__detail'>
@@ -344,9 +353,9 @@ const Skills = () => {
           </div>
           </article>
           <article className='skill__detail'>
-          <SiMongodb className='skill__detail-icon'/>
+          <SiVercel className='skill__detail-icon'/>
           <div>
-          <h4>MongoDb </h4>
+          <h4>Vercel </h4>
           <small className='text-light'>Experienced</small>
           </div>
           </article>
@@ -382,7 +391,7 @@ const Skills = () => {
           <SiTerraform className='skill__detail-icon'/>
           <div>
           <h4>Terraform </h4>
-          <small className='text-light'>Experienced</small>
+          <small className='text-light'>Intermediate</small>
           </div>
           </article>
         </div>
