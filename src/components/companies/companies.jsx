@@ -11,6 +11,7 @@ import jetdriveLogo from '../../assets/jetdrive.png';
 import strikeLogo from '../../assets/strike.svg';
 import welcomeBrokerLogo from '../../assets/welcomeBroker.png';
 import seqgptLogo from '../../assets/seqgpt.png';
+import itcLogo from '../../assets/itc.png';
 
 const Companies = () => {
   // Add your company data here
@@ -67,7 +68,13 @@ const Companies = () => {
         name: "SeqGPT",
         logo: seqgptLogo,
         link: "https://hiddenpieces.ai",
-        line1: ""
+        line1: "Genomic data analysis using AI"
+    },
+    {
+        name: "ITC Limited",
+        logo: itcLogo,
+        link: "https://itcportal.com",
+        line1: "One of India's largest conglomerates"
     }
     // Add more companies as needed
   ];
