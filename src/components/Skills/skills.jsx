@@ -102,10 +102,10 @@ const Skills = () => {
           </div>
           </article>
           <article className='skill__detail'>
-          <SiScala className='skill__detail-icon'/>
+          <SiTypescript className='skill__detail-icon'/>
           <div>
-          <h4>Scala</h4>
-          <small className='text-light'>Intermediate</small>
+          <h4>TypeScript</h4>
+          <small className='text-light'>Experienced</small>
           </div>
           </article>
           <article className='skill__detail'>
@@ -133,6 +133,13 @@ const Skills = () => {
           <SiDart className='skill__detail-icon'/>
           <div>
           <h4>Dart</h4>
+          <small className='text-light'>Experienced</small>
+          </div>
+          </article>
+          <article className='skill__detail'>
+          <SiScala className='skill__detail-icon'/>
+          <div>
+          <h4>Scala</h4>
           <small className='text-light'>Intermediate</small>
           </div>
           </article>
