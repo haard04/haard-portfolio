@@ -4,16 +4,26 @@ import './experience.css';
 const data=[
   {
     id:1,
-    Company: "Heizen (Gamma OpenGig Work Pvt. Ltd.) - Hyderabad, Telangana, India",
+    Company: "Heizen - Hyderabad, Telangana, India",
+    Role:"Senior Software Engineer",
+    Duration:"April 2026 - Current",
+    description1:"➔ Built an end-to-end order-to-dispatch platform integrating HoneyCart, QuickBooks, and Recipal, automating estimation, order creation, kitchen planning, and dispatch tracking, eliminating fragmented tools and saving 3,900 hours/year of manual work.",
+    description2:"➔ Collaborated to develop a Supply Chain Visibility Platform for one of India’s largest conglomerates, enabling real-time tracking, bottleneck detection, predictive analytics, and an NL-to-SQL chatbot, improving decision-making speed and KPI visibility by 85%.",
+    description3:""
+    
+  },
+  {
+    id:2,
+    Company: "Heizen - Hyderabad, Telangana, India",
     Role:"Software Engineer",
-    Duration:"July 2025 - Current",
+    Duration:"July 2025 - March 2026",
     description1:"➔ Designed and deployed an automated EMR data extraction pipeline using Selenium, FastAPI, PostgreSQL, and proxy rotation, enabling daily secure transfers from third-party systems to internal billing APIs boosting data accuracy by 95% and saving 90% manual processing time.",
     description2:"➔ Collaborated to develop an end-to-end AI-powered marketing platform using Next.js, NestJS, Prisma, FastAPI, MongoDB, and trigger.dev, integrating Dropbox, Pinecone, and ElasticSearch for smart content indexing and vector search, accelerated dynamic website creation and automated Netlify deployments, cutting campaign launch time by 50% and MVP turnaround by 30%.",
     description3:"➔ Developed an Omnipresence mobile app with Flutter, offering real time location based services with gesture navigation, remote shopping, and TTS features, boosting user engagement and improving accessibility for people with mobility and vision challenges by 70%."
     
   },
   {
-    id:2,
+    id:3,
     Company: "Heizen (Gamma OpenGig Work Pvt. Ltd.) - Hyderabad, Telangana, India",
     Role:"SDE Intern",
     Duration:"January 2025 - June 2025",
@@ -24,7 +34,7 @@ const data=[
   },
   {
 
-    id:3,
+    id:4,
     Company: "Marwiz Tech Pvt. Ltd. - Vadodara, Gujarat, India",
     Role:"Full Stack Development Intern",
     Duration:"June 2024 - July 2024",
@@ -34,7 +44,7 @@ const data=[
     
   },
   {
-      id:4,
+      id:5,
       Company: "Welcome Broker - Ahmedabad, Gujarat, India.",
       Role:"Software Development Intern",
       Duration:"May 2022 - May 2023",

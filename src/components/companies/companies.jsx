@@ -12,6 +12,7 @@ import strikeLogo from '../../assets/strike.svg';
 import welcomeBrokerLogo from '../../assets/welcomeBroker.png';
 import seqgptLogo from '../../assets/seqgpt.png';
 import itcLogo from '../../assets/ITC.png';
+import superfineLogo from '../../assets/superfine.svg';
 
 const Companies = () => {
   // Add your company data here
@@ -20,7 +21,19 @@ const Companies = () => {
       name: "Heizen",
       logo: heizenLogo,
       link: "https://heizen.work",
-      line1: "Seed funded startup backed by Titan Capitals & Mamaearth"
+      line1: "Funded startup & Shark Tank India approved, backed by Titan Capitals & Mamaearth & Car Dekho group"
+    },
+    {
+      name: "ITC Limited",
+      logo: itcLogo,
+      link: "https://itcportal.com",
+      line1: "One of India's largest conglomerates"
+  },
+    {
+      name: "Superfine Kitchen",
+      logo: superfineLogo,
+      link: "https://superfinekitchen.com",
+      line1: "Commercial kitchen & large-scale catering solutions provider"
     },
     {
         name: "Goldcast",
@@ -70,12 +83,7 @@ const Companies = () => {
         link: "https://hiddenpieces.ai",
         line1: "Genomic data analysis using AI"
     },
-    {
-        name: "ITC Limited",
-        logo: itcLogo,
-        link: "https://itcportal.com",
-        line1: "One of India's largest conglomerates"
-    }
+    
     // Add more companies as needed
   ];
   const scrollCompanies = [...companies, ...companies, ...companies];
