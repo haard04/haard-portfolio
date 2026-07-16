@@ -54,7 +54,7 @@
   
   .company__item:hover {
     border-color: var(--color-primary-variant);
-    background: transparent;
+    background: var(--color-bg-variant);
     transform: translateY(-5px);
   }
   
