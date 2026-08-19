@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+/*
+  The original design tokens, lifted into Tailwind's theme. Every entry here
+  becomes both a `var(--*)` and a utility -- e.g. `--color-primary` gives you
+  `bg-primary` / `text-primary` / `border-primary`.
+*/
+@theme {
+  --color-bg: #0a0a0a;
+  --color-bg-variant: #1a1a1a;
+  --color-bg-card: rgba(255, 255, 255, 0.05);
+  --color-primary: #6366f1;
+  --color-primary-variant: rgba(99, 102, 241, 0.2);
+  --color-secondary: #8b5cf6;
+  --color-accent: #06b6d4;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-muted: rgba(255, 255, 255, 0.5);
+  --color-border: rgba(255, 255, 255, 0.1);
+
+  --font-sans: 'Inter', sans-serif;
+
+  --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.3);
+
+  --radius-2xl: 1.5rem;
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --animate-fade-in-up: fadeInUp 0.6s ease-out;
+  --animate-fade-in-left: fadeInLeft 0.6s ease-out;
+  --animate-fade-in-right: fadeInRight 0.6s ease-out;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-marquee: marquee 40s linear infinite;
+}
+
+/* Gradients are multi-stop images, so they stay as plain custom properties. */
+:root {
+  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --gradient-secondary: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  --gradient-bg: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(-50%) translateX(0); }
+  50% { transform: translateY(-50%) translateX(-10px); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.3333%); }
+}
+
+@keyframes navPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(99, 102, 241, 0.5); }
+}
+
+@keyframes footerFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*
+  The original layout used a percentage-width wrapper rather than a max-width
+  one. Named `site-container` so it doesn't collide with -- and inherit the
+  max-width caps of -- Tailwind's built-in `container`.
+*/
+@utility site-container {
+  width: 75%;
+  margin-inline: auto;
+  @media (width <= 1024px) { width: 86%; }
+  @media (width <= 768px) { width: 90%; }
+  @media (width <= 600px) { width: 95%; }
+}
+
+/* Paints text with the primary gradient -- used by the display headings. */
+@utility gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@layer base {
+  /*
+    Preflight already zeroes margin/padding and unstyles lists, but the original
+    reset also dropped borders, outlines and link underlines globally.
+  */
+  *,
+  *::before,
+  *::after {
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--gradient-bg);
+    color: #fff;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+  }
+
+  h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; }
+  h2 { font-size: clamp(2rem, 4vw, 3rem); }
+  h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+  h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); font-weight: 500; }
+  h5 { font-size: clamp(1rem, 2vw, 1.25rem); font-weight: 500; }
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: var(--color-bg); }
+  ::-webkit-scrollbar-thumb {
+    background: var(--gradient-primary);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-secondary); }
+}

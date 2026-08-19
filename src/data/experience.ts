@@ -1,7 +1,14 @@
-import React from 'react';
-import './experience.css';
+export type ExperienceItem = {
+  id: number;
+  Company: string;
+  Role: string;
+  Duration: string;
+  description1: string;
+  description2: string;
+  description3: string;
+};
 
-const data=[
+export const experience: ExperienceItem[] = [
   {
     id:1,
     Company: "Heizen - Hyderabad, Telangana, India",
@@ -55,35 +62,3 @@ const data=[
     
     
   ]
-
-const Experience = () => {
-  return (
-    <section id='Experience'>
-
-        <h2>Experience</h2>
-
-        <div className='Experience'>
-        {
-          data.map(({id,Company,Role,Duration,description1,description2,description3})=>{
-            return (
-                <article key={id} className='exp_item'>
-                  <div className='company-duration'>
-                    <h2 className='company'>{Role}</h2>
-                    <h2 className='duration'>{Duration}</h2>
-                  </div>
-                  <h3 className='role'>{Company}</h3>
-                  <h5 className='exp_desc'>{description1}</h5>
-                  <h5 className='exp_desc'>{description2}</h5>
-                  <h5 className='exp_desc'>{description3}</h5>
-                </article>
-              )
-              
-          })
-        }
-        </div>
-        
-    </section>
-    )
-}
-
-export default Experience

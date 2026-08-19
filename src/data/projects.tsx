@@ -1,12 +1,21 @@
-import React, { useEffect, useRef } from 'react'
-import './Project.css'
-import musiIMG from '../../assets/musipedia-logo.png'
-import algo from '../../assets/algonew.png'
-import HMS from '../../assets/HMS.png'
-import careercatalyst from '../../assets/careercat.png'
-import expensesmeter from '../../assets/expensesmeter.png'
+import type { ReactNode } from 'react';
+import type { StaticImageData } from 'next/image';
+import musiIMG from '@/assets/musipedia-logo.png';
+import algo from '@/assets/algonew.png';
+import HMS from '@/assets/HMS.png';
+import careercatalyst from '@/assets/careercat.png';
+import expensesmeter from '@/assets/expensesmeter.png';
 
-const data=[
+export type ProjectItem = {
+  id: number;
+  image: StaticImageData | null;
+  title: ReactNode;
+  description: ReactNode;
+  github: string;
+  demo: string;
+};
+
+export const projects: ProjectItem[] = [
   {
     id:1,
     image:careercatalyst,
@@ -77,59 +86,3 @@ real-time monitoring.
   },
   
 ]
-
-const Project = () => {
-  const projectsRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const projectCards = projectsRef.current?.querySelectorAll('.project-card');
-    projectCards?.forEach((card) => {
-      observer.observe(card);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <section id='projects' ref={projectsRef}>
-      <h5>My Recent work</h5>
-      <h2>Projects</h2>
-      <div className='container project__container'>
-        {
-          data.map(({id,image,title,description,github,demo})=>{
-            return (
-              <article key={id} className='project__item project-card fade-in'>
-        {/* <div className='project__item-image'>
-        <img src={image} alt={title}></img>
-        </div> */}
-        <center className='project__title'>{title}</center>
-        <h5 className='project_desc'>{description}</h5>
-        <div className='project__item-cta'>
-        <a href={github} className='project__button' target={'_blank'}>Github</a>
-        {/* <a href={demo} className='btn btn-primary' target={'_blank'}>Live Demo</a> */}
-        </div>
-        
-        </article>
-            )
-          })
-        }
-        
-        
-
-      </div>
-      </section>
-  )
-}
-
-export default Project
