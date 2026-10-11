@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
+import { Inter, Instrument_Serif, JetBrains_Mono } from 'next/font/google';
 import {
   siteUrl,
   siteName,
@@ -10,6 +11,16 @@ import {
   profiles,
 } from '@/lib/site';
 import './globals.css';
+
+const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' });
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-instrument',
+});
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], display: 'swap', variable: '--font-jetbrains' });
 
 export const metadata: Metadata = {
   title: {
@@ -56,7 +67,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#0a0a0a',
+  themeColor: '#f4f1ea',
 };
 
 /*
@@ -75,19 +86,21 @@ const personSchema = {
   knowsAbout: [
     'Software Engineering',
     'Full Stack Development',
-    'React',
+    'NestJS',
     'Next.js',
+    'Node.js',
+    'React',
+    'FastAPI',
+    'Django',
     'TypeScript',
     'Python',
-    'Django',
-    'FastAPI',
     'Cloud Infrastructure',
   ],
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}>
       <body>
         <script
           type="application/ld+json"

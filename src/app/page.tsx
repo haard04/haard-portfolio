@@ -10,13 +10,15 @@ import Companies from '../components/companies/companies';
 const Page = () => {
   return (
     <>
-      <Header />
       <Nav />
-      <Companies />
-      <Skills />
-      <Experience />
-      <Project />
-      <Contact />
+      <Header />
+      <main>
+        <Companies />
+        <Skills />
+        <Experience />
+        <Project />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

@@ -21,7 +21,7 @@ export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
 export const siteName = 'Haard Shah';
 export const siteTitle = 'Haard Shah — Software Engineer';
 export const siteDescription =
-  'Portfolio of Haard Shah, a software engineer building full-stack products across React, Next.js, Django, FastAPI and cloud infrastructure.';
+  'Portfolio of Haard Shah, a software engineer building full-stack products across NestJS, Next.js, Node.js, React, FastAPI, Django and cloud infrastructure.';
 
 export const jobTitle = 'Software Engineer';
 export const email = 'haardshah04@gmail.com';

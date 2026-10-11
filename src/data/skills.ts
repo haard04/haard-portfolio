@@ -3,7 +3,7 @@ import { FaAws, FaCss3Alt, FaDatabase, FaDocker, FaGithub, FaHtml5, FaJava, FaLi
 import { SiAndroidstudio, SiBootstrap, SiCplusplus, SiDart, SiDjango, SiExpress, SiFastapi, SiFirebase, SiFlask, SiFlutter, SiGo, SiGooglecloud, SiJavascript, SiJenkins, SiJira, SiKotlin, SiMongodb, SiMysql, SiNestjs, SiNextdotjs, SiPostgresql, SiPostman, SiScala, SiSnowflake, SiSupabase, SiTerraform, SiTypescript, SiVercel } from 'react-icons/si';
 
 export type Skill = {
-  Icon: ComponentType<{ className?: string }>;
+  Icon: ComponentType<{ className?: string; 'aria-hidden'?: boolean }>;
   name: string;
   level: string;
 };

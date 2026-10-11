@@ -1,40 +1,30 @@
-'use client';
-
-import { useState } from 'react';
-import { FaHome, FaToolbox, FaTools } from 'react-icons/fa';
-import { AiOutlineProject } from 'react-icons/ai';
-import { IoMdContact } from 'react-icons/io';
-
 const links = [
-  { href: '#', label: 'Home', Icon: FaHome },
-  { href: '#skills', label: 'Skills', Icon: FaTools },
-  { href: '#Experience', label: 'Experience', Icon: FaToolbox },
-  { href: '#projects', label: 'Projects', Icon: AiOutlineProject },
-  { href: '#contact', label: 'Contact', Icon: IoMdContact },
+  { href: '#companies', label: 'Work' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#Experience', label: 'Experience' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#contact', label: 'Contact' },
 ];
 
-const linkBase =
-  "relative flex items-center justify-center overflow-hidden rounded-full p-3 text-[1.1rem] transition-all duration-300 ease-standard hover:-translate-y-0.5 hover:text-white before:absolute before:inset-0 before:scale-[0.8] before:rounded-full before:bg-[image:var(--gradient-primary)] before:opacity-0 before:transition-all before:duration-300 before:content-[''] hover:before:scale-100 hover:before:opacity-100 [&_svg]:relative [&_svg]:z-[1] max-md:p-2.5 max-md:text-base max-[480px]:p-2 max-[480px]:text-[0.9rem]";
-
-const linkActive =
-  'bg-[image:var(--gradient-primary)] text-white shadow-glow -translate-y-0.5 before:opacity-0 animate-[navPulse_2s_ease-in-out_infinite]';
-
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#');
-
   return (
-    <nav className="fixed bottom-8 left-1/2 z-[999] flex w-max -translate-x-1/2 gap-2 rounded-full border border-border bg-white/5 px-6 py-3 shadow-lg backdrop-blur-[20px] transition-all duration-300 ease-standard hover:shadow-xl max-md:bottom-6 max-md:gap-1 max-md:px-4 max-md:py-2 max-[480px]:gap-[0.2rem] max-[480px]:px-3 max-[480px]:py-2">
-      {links.map(({ href, label, Icon }) => (
-        <a
-          key={href}
-          href={href}
-          aria-label={label}
-          onClick={() => setActiveNav(href)}
-          className={`${linkBase} ${activeNav === href ? linkActive : 'text-light'}`}
-        >
-          <Icon />
+    /* Two rows on phones, so it only sticks once it fits on one. */
+    <nav aria-label="Primary" className="top-0 z-50 border-b border-rule bg-paper/85 backdrop-blur-md md:sticky">
+      <div className="site-container flex flex-wrap items-center justify-between gap-x-8 gap-y-2 py-4">
+        <a href="#" className="font-serif text-2xl leading-none">
+          Haard Shah<span className="text-accent">.</span>
         </a>
-      ))}
+
+        <ul className="flex max-w-full gap-x-6 overflow-x-auto label-mono text-muted max-sm:w-full max-sm:justify-between max-sm:gap-x-2 max-sm:text-[0.66rem] max-sm:tracking-[0.06em]">
+          {links.map(({ href, label }) => (
+            <li key={href}>
+              <a href={href} className="block py-1 transition-colors hover:text-ink">
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 };

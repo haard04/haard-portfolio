@@ -20,8 +20,8 @@ const Image = () => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)',
-          fontFamily: 'sans-serif',
+          background: '#f4f1ea',
+          fontFamily: 'serif',
         }}
       >
         <div
@@ -30,11 +30,11 @@ const Image = () => {
             width: 96,
             height: 96,
             marginBottom: 48,
-            borderRadius: 24,
+            borderRadius: 20,
             alignItems: 'center',
             justifyContent: 'center',
-            background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-            color: '#ffffff',
+            background: '#17160f',
+            color: '#f4f1ea',
             fontSize: 44,
             fontWeight: 700,
           }}
@@ -47,7 +47,7 @@ const Image = () => {
             display: 'flex',
             fontSize: 76,
             fontWeight: 700,
-            color: '#ffffff',
+            color: '#17160f',
             letterSpacing: '-0.03em',
           }}
         >
@@ -59,7 +59,7 @@ const Image = () => {
             display: 'flex',
             marginTop: 20,
             fontSize: 36,
-            color: 'rgba(255,255,255,0.7)',
+            color: '#66625a',
           }}
         >
           {jobTitle}
@@ -72,7 +72,7 @@ const Image = () => {
             width: 160,
             height: 6,
             borderRadius: 999,
-            background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
+            background: '#b93a15',
           }}
         />
       </div>
