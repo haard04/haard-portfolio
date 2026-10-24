@@ -7,7 +7,7 @@ import cloudNationLogo from '@/assets/cloudnation.svg';
 import jetdriveLogo from '@/assets/jetdrive.png';
 import strikeLogo from '@/assets/strike.svg';
 import welcomeBrokerLogo from '@/assets/welcomeBroker.png';
-import seqgptLogo from '@/assets/seqgpt.png';
+import omabitLogo from '@/assets/omabit.svg';
 import itcLogo from '@/assets/ITC.png';
 import superfineLogo from '@/assets/superfine.svg';
 
@@ -81,9 +81,9 @@ export const companies: Company[] = [
     line1: 'Leading Cattlefeed market since 25+ years',
   },
   {
-    name: 'SeqGPT',
-    logo: seqgptLogo,
-    link: 'https://hiddenpieces.ai',
+    name: 'Omabit',
+    logo: omabitLogo,
+    link: 'https://omabit.com',
     line1: 'Genomic data analysis using AI',
   },
 ];
